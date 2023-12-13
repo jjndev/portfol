@@ -107,6 +107,7 @@ body {
 /*Text and Links*/
 p, a, h1, h2, h3, h4, h5, h6 {
   font-family: 'Trueno Light', Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0;
 }
 h1, h2 {
   font-family: 'Passageway', Verdana, Geneva, Tahoma, sans-serif;
