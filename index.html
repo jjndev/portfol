@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./jjn.css">
+    <link rel="stylesheet" href="./style/textstyle.css">
+    <link rel="stylesheet" href="./style/mainstyle.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <meta name="robots" content="noindex,nofollow" />
     <title>J N</title>
 </head>
 <body>
-
+<div id="back"></div>
 <div id="back-deco"><div id="back-deco2"></div></div>
 <div id="header-deco"></div>
 <div id="footer-deco"></div>
@@ -17,26 +19,48 @@
 
     <header>
         <h1>Jordan Noel</h1>
-        <h2>Game and Software Developer</h2>  
+        <h2>Game and Software Developer, London</h2>  
     </header>
 
     <main>
         <section>
             <h3>Myself</h3>
             <p>
-                A combat enthusiast enthusiast for all things digital and intricate, be it running databases, balancing game mechanics
-                or building combat robots in my spare time. 
-                Talented across many fields including CAD, illustration and content writing, 
-                I am currently looking to hone my programming and design abilities in a 
-                relevant career.
+                An enthusiast for electronics, computers and all things intricate. 
+                I fit things together in a way that resonates with people.
+                
+                <br><br>I started my design journey penning tabletop systems long before I knew them by name. 
+                The Game Maker software of the 2000s introduced me to indie game development,
+                and I've been building digital projects ever since. 
+                
+                <br><br>I've had a number of freelance roles and contributed to hobbyist
+                projects among streaming, videogame and modding creators.
+                Currently, I'm looking to hone the programming and design abilities
+                I have attained in a relevant career.
+                <br><br>
+                Outside of computing, I happen to enjoy leisurely running, DIY and 
+                an ever-growing list of music genres. I build palm-sized combat robots
+                as a pastime, and compete with them in various events around the UK.
             </p>
         </section>
 
         <section>
             <h3>Technologies</h3>
-            <h5>Experienced: </h4>
                 
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" height="50vmin"/>
+
+            <img src="./img/gmlogo.png" height="50vmin" title="Game Maker Language">
+            
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="50vmin"/>
+            
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="50vmin"/>
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="50vmin"/>
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="50vmin"/>
+          
+          
+          
           
         </section>
         
@@ -44,8 +68,9 @@
 
     <aside>
         <h3>Personal Projects</h3>
-        <article>
-            <!-- (A) TOGGLE BUTTON -->
+
+        <input type="radio" class="togCheck" id="check0" name="radiotab" style="height: 100%;" checked>
+        <div class="togContent">
             <label for="check1" class="togButton">
                 <h4>MysteryCord <i class="devicon-csharp-plain" title="CSharp"></i>
                     <i class="devicon-sqlite-plain" title="Sqlite"></i>
@@ -55,16 +80,7 @@
                     <a href="https://pokeapi.co/" target="_blank">PokéAPI</a> database and the 
                     <a href="https://discord.com/developers/docs/intro" target="_blank">Discord API</a>.</p>
             </label>
-            
-            <!-- (B) CONTENT -->
-            <input type="checkbox" class="togCheck" id="check1">
-            <div class="togContent">
-                <p>Top.GG listing page</p>
-            </div>
-        </article>
-        
-        <article>
-            <!-- (A) TOGGLE BUTTON -->
+
             <label for="check2" class="togButton">
                 <h4>ArcBall   
                     <i class="devicon-javascript-plain" title="JavaScript"></i> 
@@ -72,50 +88,14 @@
                 </h4>
                 <p>Browser game written in Javascript, using CSS 3D perspective.</p>
             </label>
-            
-            <!-- (B) CONTENT -->
-            <input type="checkbox" class="togCheck" id="check2">
-            <div class="togContent">
-                <p>
-                    Play in separate window
-                    <br>View Source Code
-                    <br>An example game written in a week to familiarize myself with JavaScript classes. 
-                </p>
-            </div>
-        </article>
 
-        <article>
-            <!-- (A) TOGGLE BUTTON -->
             <label for="check3" class="togButton">
                 <h4>'Rivals of Aether' Character Mods
                     <img src="./img/gmlogo.png" height="16em" title="Game Maker Language">
                 </h4>
                 <p>Custom character additions for a 'Smash Bros' styled indie videogame.</p>
             </label>
-            
-            <!-- (B) CONTENT -->
-            <input type="checkbox" class="togCheck" id="check3">
-            <div class="togContent">
 
-                <figure style="float: left;">
-                    <figcaption>
-                        A Duo character inspired by 'Pichu' and 'Ice Climbers' in 'Super Smash Bros'. 
-                        Created in one month, in collaboration with artist 
-                        <a href="https://twitter.com/THCGourami" target="_blank">Tom Chiacu</a>.
-                    </figcaption>
-                </figure>
-
-                <figure style="float: right;">
-                    <figcaption>
-                        An original character made to fit 'Rivals of Aether's world and setting. Has seen 
-                    </figcaption>
-                </figure>
-
-            </div>
-        </article>
-
-        <article>
-            <!-- (A) TOGGLE BUTTON -->
             <label for="check4" class="togButton">
                 <h4>To-Do List
                     <i class="devicon-python-plain" title="Python"></i>
@@ -123,16 +103,52 @@
                 </h4>
                 <p>An example CRUD application.</p>
             </label>
+
+        </div>
+
+            
             
             <!-- (B) CONTENT -->
-            <input type="checkbox" class="togCheck" id="check4">
-            <div class="togContent">
-                <p>
-                    What it says on the tin. An exercise in learning Python, interacting with a Sqlite database.
-                    <br>View Source Code
-                </p>
-            </div>
+            <input type="radio" class="togCheck" id="check1" name="radiotab">
+            <article class="togContent">
+                <object type="text/html" data="./proj/mcord.html"></object>
+            <label for="check0" class="togButton">
+                <h4>( &#x2B9C Back)</h4>
+            </label>
+            </article>
+
+        
+            
+            
+            <!-- (B) CONTENT -->
+            <input type="radio" class="togCheck" id="check2" name="radiotab">
+            <article class="togContent">
+                
+                <object type="text/html" data="./proj/arc.html"></object>
+            <label for="check0" class="togButton">
+                <h4>( &#x2B9C Back)</h4>
+            </label>
+            </article>
+
+
+
+        <input type="radio" class="togCheck" id="check3" name="radiotab">
+        <article class="togContent">
+            <object type="text/html" data="./proj/roa.html"></object>
+            <label for="check0" class="togButton">
+                <h4>( &#x2B9C Back)</h4>
+            </label>
+
         </article>
+
+        <input type="radio" class="togCheck" id="check4" name="radiotab">
+        <article class="togContent">
+            <object type="text/html" data="./proj/todo.html"></object>
+            <label for="check0" class="togButton">
+                <h4>( &#x2B9C Back)</h4>
+            </label>
+        </article>
+
 
 
     </aside>
@@ -140,7 +156,11 @@
 
     <footer>
         <h3>Contact</h3>
-        <p>Get in touch at a@b.c</p>
+        <p float: left>Get in touch:</p>
+            <p float: right>jordan-noel@hotmail.com
+            <br>jjndev.github.com
+        </p>
+        
     </footer>
 </div>
 
