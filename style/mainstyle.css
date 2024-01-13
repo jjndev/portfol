@@ -49,11 +49,11 @@
 @keyframes anim-back-deco {
   from  { transform: rotate(-60deg) translateX(    0vmin); }
     1%  { transform: rotate(-60deg) translateX(   .1vmin); }
-    48% { transform: rotate(-60deg) translateX(   30vmin); }
+    48% { transform: rotate(-60deg) translateX(   26vmin); }
     49% { transform: rotate(-60deg) translateX(   25vmin); }
     50% { transform: rotate(-60deg) translateX(   25vmin); }
     51% { transform: rotate(-60deg) translateX( 25.1vmin); }
-    98% { transform: rotate(-60deg) translateX(   55vmin); }
+    98% { transform: rotate(-60deg) translateX(   51vmin); }
     99% { transform: rotate(-60deg) translateX(   50vmin); }
     to  { transform: rotate(-60deg) translateX(   50vmin); }
 }
@@ -157,7 +157,7 @@ section, header, aside {
 
 object, figure, figcaption {
   width: 100%;
-  min-height: 60vh;
+  min-height: 70vh;
   margin: 0;
   padding: 0;
   flex-grow: 1;
